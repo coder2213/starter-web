@@ -27,3 +27,8 @@ To read a user or global variable:
 Remember, you must open a new Command or Powershell window to read this variable.
 
 echo %variable%
+
+
+First change
+
+second changes
