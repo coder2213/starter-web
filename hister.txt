@@ -7,3 +7,23 @@ Above commands are for cmd, not powershell. In powershell, type: echo $env:path 
 To display on separate lines, type: ls env:
 To display all variables starting with "h", type: ls env:h*
 To display contents/values of all variables containing "java", type: ls env:*java*
+
+
+
+As an additional bit of information: While SET works with global or system variables, sometimes you want to write and read User variables, and this is done with the SETX command. SETX is included in the base installs of Windows beginning with Vista, but was also available in Windows XP by installing the Resource Pack.
+
+One difference about SETX though is that you cannot read the variable out in the same command window you wrote it in. You have to write the SETX command in one Command or Powershell window, and then open a new window to read it using ECHO.
+
+SETX can also write global or system variables.
+
+To Set a user variable using SETX:
+
+setx variable value
+To set a global or system variable using SETX:
+
+setx /m variable value
+To read a user or global variable:
+
+Remember, you must open a new Command or Powershell window to read this variable.
+
+echo %variable%
