@@ -1,0 +1,9 @@
+o display contents of an environment variable eg. path, at command prompt type: echo %path%
+To display the values in separate lines, type: set
+To display all variables starting with "h", type: set h
+(Press enter after typing to get computer response, duh!)
+
+Above commands are for cmd, not powershell. In powershell, type: echo $env:path or ls env:path
+To display on separate lines, type: ls env:
+To display all variables starting with "h", type: ls env:h*
+To display contents/values of all variables containing "java", type: ls env:*java*
